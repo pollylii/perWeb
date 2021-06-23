@@ -1,0 +1,12 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(at 120% -20%, #fff, #c0abda);
+}
+.app{
+    height: 100%;
+    width: 100%;
+    
+}

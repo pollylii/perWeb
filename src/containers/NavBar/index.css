@@ -1,0 +1,12 @@
+.navBar{
+    color: red;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid pink;
+}
+.titles{
+    display: flex;   
+    justify-content: flex-end;
+ 
+}
+
