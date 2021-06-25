@@ -1,6 +1,7 @@
 .fixedBtn{
     position: fixed;
     bottom: 30%;
-    right: 0;
+    right: 10px;
     color: #000;
+    z-index: 99999;
 }

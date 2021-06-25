@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
+import { Button } from 'antd';
+import { MenuUnfoldOutlined } from '@ant-design/icons';
 import './index.scss'
 
 class fixedBtn extends Component {
 	render() {
 		return (
 			<div className="fixedBtn">
-				fixedBtn
+				 <Button shape="circle" icon={<MenuUnfoldOutlined />} />
 			</div>
 		)
 	}
