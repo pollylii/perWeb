@@ -20,7 +20,7 @@ class Home extends Component {
 			id: '4',
 			url: "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"
 		}],
-		img: '../../../images/imgs/cat1.jpg'
+		img: '../../images/imgs/cat1.jpg'
 		
 	}
 	render() {
@@ -29,12 +29,12 @@ class Home extends Component {
 		}
 		const imgStyle = {
 			margin:' 0 auto',
-			maxHeight: '100%'
+			// maxHeight: '100%'
 		}
 		const {imgs} = this.state;
 		
 		const img =(this.state.img);
-		console.log('imgs', img );
+		
 		
 		return (
 			<div className="homepage">
@@ -49,7 +49,7 @@ class Home extends Component {
 						})
 					}
 				</Carousel>
-				{/* <img src={(img)} alt={img} /> */}
+				{/* <img src={img} alt={img} /> */}
 			</div>
 		)
 	}

@@ -1,0 +1,16 @@
+.navBar{
+    position: fixed;
+    top: 0;
+    text-align: right;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid pink;
+    width: 100%;
+    background-color: rosybrown;
+    .titles {
+        span{
+            padding-right: 10px;
+        }
+        
+    }
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
-import './index.css'
+import './index.scss'
 
 class fixedBtn extends Component {
 	render() {
