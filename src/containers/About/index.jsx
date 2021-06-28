@@ -14,7 +14,7 @@ class About extends Component {
 	render() {
 		//console.log('UI组件接收到的props是',this.props);
 		const img = (this.state.img);
-		const url =(this.state.url);
+		// const url = (this.state.url);
 		console.log('img', img );
 		return (
 			<div className="about">
