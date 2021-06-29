@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import NavBar from './NavBar'
 import FixedBtn from './FixedBtn'
 import Pages from '../pages'
+import Router from '../router'
 
 export default class Layout extends Component {
 	render() {
@@ -9,7 +10,7 @@ export default class Layout extends Component {
 			<div className="layout">
                 <NavBar />
                 <FixedBtn />
-				<Pages />
+                <Router />
 			</div>
 		)
 	}
