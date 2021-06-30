@@ -51,9 +51,8 @@ export default class Layout extends Component {
         {
           constantRoutes.map(element => {
             return (
-              // <Route key={element.id} path={element.path} component={element.Component} />
-              <Menu.Item>
-                <Link key={element.id} to={element.path}>{element.icon}</Link>
+              <Menu.Item key={element.id}>
+                <Link to={element.path}>{element.icon}</Link>
               </Menu.Item> 
 
             )
