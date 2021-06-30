@@ -1,5 +1,5 @@
 .navBar{
-    position: fixed;
+    // position: fixed;
     top: 0;
     text-align: right;
     height: 50px;
@@ -7,9 +7,10 @@
     border: 1px solid pink;
     width: 100%;
     background-color: rosybrown;
-    z-index: 99;
+    // z-index: 99;
     .titles {
-        span{
+        color: #000000;
+        a{
             padding-right: 10px;
         }
         

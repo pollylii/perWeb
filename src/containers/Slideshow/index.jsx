@@ -37,7 +37,7 @@ class Home extends Component {
 		
 		
 		return (
-			<div className="homepage">
+			<div className="slideshow">
 				<Carousel autoplay={true} style={carouselStyle}>
 					{
 						imgs.map(item=> {

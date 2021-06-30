@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
-import MyNavLink from '../../containers/MyNavLink'
+import {Route, Redirect,Link,Switch  } from "react-router-dom";
+import HomePage from '../../pages/HomePage'
+import Experience from '../../pages/Experience'
+import WheelWorks from '../../pages/WheelWorks'
+import ContactWay from '../../pages/ContactWay'
 import './index.scss'
 
 export default class NavBar extends Component {
@@ -7,14 +11,19 @@ export default class NavBar extends Component {
         return (
             <div className="navBar">
                 <div className="titles">
-                    {/* <span id="homepage">首页</span>
-                    <span id="aboutMe">关于我</span>
-                    <span id="workshow">作品集</span>
-                    <span id="reachMe">联系我</span> */}
-                    <MyNavLink to="/HomePage">首页</MyNavLink>
-					<MyNavLink to="/Experience">关于我</MyNavLink>
-					<MyNavLink to="/WheelWorks">作品集</MyNavLink>
-					<MyNavLink to="/ContactWay">联系我</MyNavLink>
+                    <Link to="/pages/HomePage">首页</Link>
+					<Link to="/pages/Experience">关于我</Link>
+					<Link to="/pages/WheelWorks">作品集</Link>
+					<Link to="/pages/ContactWay">联系我</Link>
+                </div>
+                <div>
+                    <Switch>
+                        <Route path="/pages/HomePage" component={HomePage}/>
+                        <Route path="/pages/Experience" component={Experience}/>
+                        <Route path="/pages/WheelWorks" component={WheelWorks}/>
+                        <Route path="/pages/ContactWay" component={ContactWay}/>
+                        <Redirect to="/pages/HomePage"/>
+                    </Switch>
                 </div>
             </div>
         )

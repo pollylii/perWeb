@@ -1,20 +1,12 @@
-import React from 'react';
-import { Route, Redirect, Switch } from 'react-router-dom';
-import HomePage from '../pages/HomePage'
-import Experience from '../pages/Experience'
-import WheelWorks from '../pages/WheelWorks'
-import ContactWay from '../pages/ContactWay'
+import React, { Component } from 'react'
+import ConstantRoutes from './constantRoutes'
 
-const constantRoutes  = (props) => {
-  return (
-    <Switch>
-        <Route path="/pages/HomePage" component={HomePage}/>
-        <Route path="/pages/Experience" component={Experience}/>
-        <Route path="/pages/WheelWorks" component={WheelWorks}/>
-        <Route path="/pages/ContactWay" component={ContactWay}/>
-        <Redirect to="/pages/HomePage"/>
-    </Switch>
-  );
+export default class index extends Component {
+  render() {
+    return (
+      <div>
+        <ConstantRoutes />
+      </div>
+    )
+  }
 }
-
-export default constantRoutes ;
