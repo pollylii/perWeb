@@ -53,8 +53,7 @@ export default class Layout extends Component {
             return (
               <Menu.Item key={element.id}>
                 <Link to={element.path}>{element.icon}</Link>
-              </Menu.Item> 
-
+              </Menu.Item>
             )
           })
         }
@@ -82,7 +81,7 @@ export default class Layout extends Component {
                 )
               })
             }
-            <Redirect to="/pages/HomePage" />
+            <Redirect to={constantRoutes[0].path} />
           </Switch>
         </div>
         {/* fixedBtn */}
